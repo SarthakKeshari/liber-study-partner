@@ -51,7 +51,7 @@ export default function CourseCard(props) {
                     Keywords - 
                 </Text>
                 <Text fontSize="sm" textColor="gray.500">
-                    {props.courseDetail.keywords.map((index,e) => e+  index === props.courseDetail.keywords.length-1?", ": " ")}
+                    {props.courseDetail.keywords.map((e, idx) => (e+(idx!=props.courseDetail.keywords.length-1?", ":"")))}
                 </Text>
                 <Text
                     fontSize="xs"
