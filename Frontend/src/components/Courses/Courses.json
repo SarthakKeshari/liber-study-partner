@@ -4,7 +4,7 @@
         "keywords" : ["stack","queue","bst","heap"],
         "domain" : "CS/IT",
         "rating" : 2.2,
-        "views" : 1100,
+        "views" : 100,
         "tag" : "Most Visited",
         "imgurl" : "/images/courses/dsa.png"
     },
@@ -13,8 +13,8 @@
         "def" : "An operating system (OS) is basically a collection of software that manages computer hardware resources and provides common services for computer programs. ",
         "keywords" : ["sjf","paging","fcfs","roundrobin"],
         "domain" : "CS/IT",
-        "rating" : 2.2,
-        "views" : 1100,
+        "rating" : 2.1,
+        "views" : 2240,
         "tag" : "Most Visited",
         "imgurl" : "/images/courses/os.png"
     },
@@ -23,7 +23,7 @@
         "def" : "A database management system (DBMS) is system software for creating and managing databases. A DBMS makes it possible for end users to create, protect, read, update and delete data in a database. ",
         "keywords" : ["dbms","table","query","schema"],
         "domain" : "CS/IT",
-        "rating" : 2.2,
+        "rating" : 1.2,
         "views" : 1100,
         "tag" : "",
         "imgurl" : "/images/courses/dsa.png"

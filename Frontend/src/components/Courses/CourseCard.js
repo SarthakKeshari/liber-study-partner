@@ -8,7 +8,7 @@ import {
   
   import { ArrowRightIcon, StarIcon } from "@chakra-ui/icons";
 
-export default function CourseCard() {
+export default function CourseCard(props) {
 
     return (
 
@@ -35,23 +35,22 @@ export default function CourseCard() {
                 colorScheme="green"
                 m="2"
                 shadow="lg"
-                style={{ position: "absolute", top: "0", right: "0" }}
+                style={{ position: "absolute", top: "0", right: "0", textTransform: "uppercase" }}
             >
-                MOST VISITED
+                {props.courseDetail.tag}
             </Badge>
             <Box px="2">
                 <Heading as="h4" size="md" pt="2">
-                    Data Structures
+                    {props.title}
                 </Heading>
                 <Text fontSize="md" textColor="gray.600" mt="2">
-                    Specific way to store and organize data in a computer's memory
-                    so that these data can ...
+                    {props.courseDetail.def.substring(0, 100)}...
                 </Text>
                 <Text fontSize="sm" textColor="gray.700" mt="3">
                     Keywords -
                 </Text>
                 <Text fontSize="sm" textColor="gray.500">
-                    Stack, Queue, Linked List, Trees, Graph
+                    {props.courseDetail.keywords.map(e => (e+", "))}
                 </Text>
                 <Text
                     fontSize="xs"
@@ -60,8 +59,7 @@ export default function CourseCard() {
                     mb="16"
                     style={{ display: "flex", alignItems: "center" }}
                 >
-                    <StarIcon mr="1" textColor="#Dede25" w={4} h={4} /> 2.2 (1.1k
-                    views)
+                    <StarIcon mr="1" textColor="#Dede25" w={4} h={4} /> {props.courseDetail.rating} ({props.courseDetail.views} views)
                 </Text>
 
                 <Box
@@ -74,7 +72,7 @@ export default function CourseCard() {
                         m="2"
                         style={{ position: "absolute", bottom: "0", left: "0" }}
                     >
-                        CS/IT
+                        {props.courseDetail.domain}
                     </Text>
                 </Box>
                 <Box

@@ -44,9 +44,6 @@ export default function HomePage() {
                 Font-Size - 36px
             */}
             <CourseCards/>
-            <CourseCards/>
-            <CourseCards/>
-            <CourseCards/>
             <Box
               bg="#821b9110"
               p="1"
