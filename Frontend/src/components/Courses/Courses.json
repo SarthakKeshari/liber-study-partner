@@ -3,8 +3,8 @@
         "def" : "A data structure, in the simplest term is a scheme for organizing logically related data in computer's memory. A data structure should be seen as a logical concept that must address two fundamental concerns.",
         "keywords" : ["stack","queue","bst","heap"],
         "domain" : "CS/IT",
-        "rating" : 2.2,
-        "views" : 100,
+        "rating" : 4.2,
+        "views" : 2700,
         "tag" : "Most Visited",
         "imgurl" : "/images/courses/dsa.png"
     },
@@ -13,9 +13,9 @@
         "def" : "An operating system (OS) is basically a collection of software that manages computer hardware resources and provides common services for computer programs. ",
         "keywords" : ["sjf","paging","fcfs","roundrobin"],
         "domain" : "CS/IT",
-        "rating" : 2.1,
-        "views" : 2240,
-        "tag" : "Most Visited",
+        "rating" : 3.7,
+        "views" : 2340,
+        "tag" : "Most Valuable",
         "imgurl" : "/images/courses/os.png"
     },
 
@@ -23,9 +23,9 @@
         "def" : "A database management system (DBMS) is system software for creating and managing databases. A DBMS makes it possible for end users to create, protect, read, update and delete data in a database. ",
         "keywords" : ["dbms","table","query","schema"],
         "domain" : "CS/IT",
-        "rating" : 1.2,
-        "views" : 1100,
-        "tag" : "",
+        "rating" : 3.2,
+        "views" : 1900,
+        "tag" : "Most Valuable",
         "imgurl" : "/images/courses/dsa.png"
     },
 
@@ -33,9 +33,9 @@
         "def" : "A computer network is a set of computers sharing resources located on or provided by network nodes.",
         "keywords" : ["topology","network","protocol","osimodel"],
         "domain" : "CS/IT",
-        "rating" : 2.2,
+        "rating" : 2.6,
         "views" : 1100,
-        "tag" : "",
+        "tag" : "Most Visited",
         "imgurl" : "/images/courses/os.png"
     }
 }

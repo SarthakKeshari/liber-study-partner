@@ -32,12 +32,13 @@ export default function CourseCard(props) {
             />
             <Badge
                 variant="subtle"
-                colorScheme="green"
+                colorScheme={props.courseDetail.tag == "Most Visited"? "green" : "yellow"}
                 m="2"
                 shadow="lg"
                 style={{ position: "absolute", top: "0", right: "0", textTransform: "uppercase" }}
             >
-                {props.courseDetail.tag}
+            {props.courseDetail.tags}    
+                
             </Badge>
             <Box px="2">
                 <Heading as="h4" size="md" pt="2">
@@ -47,10 +48,10 @@ export default function CourseCard(props) {
                     {props.courseDetail.def.substring(0, 100)}...
                 </Text>
                 <Text fontSize="sm" textColor="gray.700" mt="3">
-                    Keywords -
+                    Keywords - 
                 </Text>
                 <Text fontSize="sm" textColor="gray.500">
-                    {props.courseDetail.keywords.map(e => (e+", "))}
+                    {props.courseDetail.keywords.map((index,e) => e+  index === props.courseDetail.keywords.length-1?", ": " ")}
                 </Text>
                 <Text
                     fontSize="xs"
