@@ -32,7 +32,7 @@ export default function CourseCard(props) {
             />
             <Badge
                 variant="subtle"
-                colorScheme={props.courseDetail.tag == "Most Visited"? "green" : "yellow"}
+                colorScheme={props.courseDetail.tag === "Most Visited"? "green" : "yellow"}
                 m="2"
                 shadow="lg"
                 style={{ position: "absolute", top: "0", right: "0", textTransform: "uppercase" }}
@@ -50,7 +50,7 @@ export default function CourseCard(props) {
                     Keywords - 
                 </Text>
                 <Text fontSize="sm" textColor="gray.500">
-                    {props.courseDetail.keywords.map((e, idx) => (e+(idx!=props.courseDetail.keywords.length-1?", ":"")))}
+                    {props.courseDetail.keywords.map((e, idx) => (e+(idx!==props.courseDetail.keywords.length-1?", ":"")))}
                 </Text>
                 <Text
                     fontSize="xs"
