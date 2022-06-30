@@ -14,6 +14,8 @@ import { SearchIcon } from "@chakra-ui/icons";
 import { ArrowRightIcon, StarIcon } from "@chakra-ui/icons";
 import styles from "./HomePage.module.css";
 import Filter from "./Filter";
+import CourseCards from "../Courses/CourseCards";
+
 
 export default function HomePage() {
   return (
@@ -41,6 +43,10 @@ export default function HomePage() {
                 Font-Style - CantoraOne
                 Font-Size - 36px
             */}
+            <CourseCards/>
+            <CourseCards/>
+            <CourseCards/>
+            <CourseCards/>
             <Box
               bg="#821b9110"
               p="1"

@@ -1,0 +1,41 @@
+{
+    "Data Structures" : {
+        "def" : "A data structure, in the simplest term is a scheme for organizing logically related data in computer's memory. A data structure should be seen as a logical concept that must address two fundamental concerns.",
+        "keywords" : ["stack","queue","bst","heap"],
+        "domain" : "CS/IT",
+        "rating" : 2.2,
+        "views" : 1100,
+        "tag" : "Most Visited",
+        "imgurl" : "/images/courses/dsa.png"
+    },
+
+    "Operating System" : {
+        "def" : "An operating system (OS) is basically a collection of software that manages computer hardware resources and provides common services for computer programs. ",
+        "keywords" : ["sjf","paging","fcfs","roundrobin"],
+        "domain" : "CS/IT",
+        "rating" : 2.2,
+        "views" : 1100,
+        "tag" : "Most Visited",
+        "imgurl" : "/images/courses/os.png"
+    },
+
+    "Database Management System" : {
+        "def" : "A database management system (DBMS) is system software for creating and managing databases. A DBMS makes it possible for end users to create, protect, read, update and delete data in a database. ",
+        "keywords" : ["dbms","table","query","schema"],
+        "domain" : "CS/IT",
+        "rating" : 2.2,
+        "views" : 1100,
+        "tag" : "",
+        "imgurl" : "/images/courses/dsa.png"
+    },
+
+    "Computer Network" : {
+        "def" : "A computer network is a set of computers sharing resources located on or provided by network nodes.",
+        "keywords" : ["topology","network","protocol","osimodel"],
+        "domain" : "CS/IT",
+        "rating" : 2.2,
+        "views" : 1100,
+        "tag" : "",
+        "imgurl" : "/images/courses/os.png"
+    }
+}
