@@ -13,7 +13,7 @@ export default function FilterStar() {
     <Box>
       <Text mb="1">Star Rating</Text>
       <RangeSlider
-        aria-label={["min", "max"]}
+        // aria-label={["min", "max"]}
         defaultValue={[0, 5]}
         min={0}
         max={5}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Badge, Box, Button, Menu, MenuButton, MenuItem, MenuList, Select, Text } from "@chakra-ui/react";
+import { Badge, Box, Button, Menu, MenuButton, MenuItem, MenuList, Text } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 
 export default function FilterKeywords() {
