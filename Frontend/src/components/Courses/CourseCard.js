@@ -37,8 +37,7 @@ export default function CourseCard(props) {
                 shadow="lg"
                 style={{ position: "absolute", top: "0", right: "0", textTransform: "uppercase" }}
             >
-            {props.courseDetail.tags}    
-                
+                {props.courseDetail.tag}     
             </Badge>
             <Box px="2">
                 <Heading as="h4" size="md" pt="2">
