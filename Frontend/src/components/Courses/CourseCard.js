@@ -4,9 +4,10 @@ import {
     Heading,
     Badge,
     Text,
-  } from "@chakra-ui/react";
-  
-  import { ArrowRightIcon, StarIcon } from "@chakra-ui/icons";
+    Button,
+} from "@chakra-ui/react";
+
+import { ArrowRightIcon, StarIcon } from "@chakra-ui/icons";
 
 export default function CourseCard(props) {
 
@@ -32,13 +33,18 @@ export default function CourseCard(props) {
             />
             <Badge
                 variant="subtle"
-                colorScheme={props.courseDetail.tag === "Most Visited"? "green" : "yellow"}
+                colorScheme={props.courseDetail.tag === "Most Visited" ? "green" : "yellow"}
                 m="2"
                 shadow="lg"
-                style={{ position: "absolute", top: "0", right: "0", textTransform: "uppercase" }}
+                style={{ position: "absolute", top: "0", left: "0", textTransform: "uppercase" }}
             >
-                {props.courseDetail.tag}     
+                {props.courseDetail.tag}
             </Badge>
+            <Button colorScheme="red" size='sm' 
+                style={{ position: "absolute", top: "0", right: "0" }}
+            >
+                Favorite
+            </Button>
             <Box px="2">
                 <Heading as="h4" size="md" pt="2">
                     {props.title}
@@ -47,10 +53,10 @@ export default function CourseCard(props) {
                     {props.courseDetail.def.substring(0, 100)}...
                 </Text>
                 <Text fontSize="sm" textColor="gray.700" mt="3">
-                    Keywords - 
+                    Keywords -
                 </Text>
                 <Text fontSize="sm" textColor="gray.500">
-                    {props.courseDetail.keywords.map((e, idx) => (e+(idx!==props.courseDetail.keywords.length-1?", ":"")))}
+                    {props.courseDetail.keywords.map((e, idx) => (e + (idx !== props.courseDetail.keywords.length - 1 ? ", " : "")))}
                 </Text>
                 <Text
                     fontSize="xs"

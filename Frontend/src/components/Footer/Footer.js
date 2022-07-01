@@ -31,8 +31,8 @@ export default function Footer() {
                 <hr></hr>
             </GridItem>
             <GridItem w='100%' h='10'marginTop={"40px"}>
-                <Text fontSize='sm'>Reach Us At <br></br> Civil Lines, Prayagraj <br></br> Subscribe Us ! <br></br></Text>
-                <Input placeholder='Your Mail Id' size='md' />
+                <Text fontSize='md'>Reach Us At <br></br> Civil Lines, Prayagraj <br></br> Subscribe Us ! <br></br></Text>
+                <Input placeholder='Your Mail Id' size='sm' />
             </GridItem>
 
         </Grid>
