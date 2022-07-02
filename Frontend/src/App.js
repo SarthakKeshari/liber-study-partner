@@ -2,10 +2,10 @@
 import { extendTheme, ChakraProvider } from '@chakra-ui/react'
 import Navbar from './components/Navbar';
 import './App.css'
-import HomePage from './components/Home/HomePage';
+//import HomePage from './components/Home/HomePage';
 import Footer from './components/Footer/Footer';
 // import CourseDetails from './components/Courses/CourseDetails'
-
+import Favorite from './components/Favorites/Favorite'
 const colors = {
   brand: {
     900: '#1a365d',
@@ -21,7 +21,8 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <Navbar/>
-      <HomePage/>
+      <Favorite/>
+      {/*<HomePage/>*/}
       <Footer/>
       {/* <CourseDetails/> */}
     </ChakraProvider>
