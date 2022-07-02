@@ -4,12 +4,16 @@ import {
     Heading,
     Badge,
     Text,
-    Button,
 } from "@chakra-ui/react";
-
 import { ArrowRightIcon, StarIcon } from "@chakra-ui/icons";
+import { useState } from "react";
 
 export default function CourseCard(props) {
+
+    const [favOnOff, setFavOnOff] = useState(0);
+    const handleFavClick = () => {
+        setFavOnOff(!favOnOff)
+    }
 
     return (
 
@@ -40,11 +44,13 @@ export default function CourseCard(props) {
             >
                 {props.courseDetail.tag}
             </Badge>
-            <Button colorScheme="red" size='sm' 
-                style={{ position: "absolute", top: "0", right: "0" }}
+            <Box
+                m="2"
+                mr="3"
+                style={{ position: "absolute", top: "0", right: "0", background: "transparent"}}
             >
-                Favorite
-            </Button>
+                <i class="fas fa-heart" style={{color: favOnOff?"red":"white", fontSize: "22px"}} onClick={handleFavClick}></i>
+            </Box>
             <Box px="2">
                 <Heading as="h4" size="md" pt="2">
                     {props.title}
