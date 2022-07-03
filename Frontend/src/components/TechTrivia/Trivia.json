@@ -1,0 +1,30 @@
+{
+    "DS War" : {
+        "domain" : "CS/IT",
+        "topic" : "Data Structure and Algorithm",
+        "tag" : "Most Valuable",
+        "imgurl" : "/images/courses/dsa.png"
+    },
+
+    "OS Compete" : {
+        "domain" : "CS/IT",
+        "topic" : "Operating System",
+        "tag" : "Most Valuable",
+        "imgurl" : "/images/courses/os.png"
+    },
+
+    "DBMS Checkmate" : {
+        "domain" : "CS/IT",
+        "topic" : "Database Management System",
+        "tag" : "Most Valuable",
+        "imgurl" : "/images/courses/dsa.png"
+    },
+
+    "CN Tricks" : {
+        "domain" : "CS/IT",
+        "topic" : "Computer Networks",
+        "tag" : "Most Valuable",
+        "imgurl" : "/images/courses/os.png"
+    
+    }
+}

@@ -15,6 +15,7 @@ import CourseCards from "../Courses/CourseCards";
 
 export default function Favorite() {
     return (
+        
         <Box className={styles.background}>
             <Box mx="5vw" minW="56" pt="24" px="4">
                 <Box display={"flex"}>

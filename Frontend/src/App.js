@@ -5,7 +5,7 @@ import './App.css'
 //import HomePage from './components/Home/HomePage';
 import Footer from './components/Footer/Footer';
 // import CourseDetails from './components/Courses/CourseDetails'
-import Favorite from './components/Favorites/Favorite'
+import Trivia from './components/TechTrivia/Trivia'
 const colors = {
   brand: {
     900: '#1a365d',
@@ -21,7 +21,7 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <Navbar/>
-      <Favorite/>
+      <Trivia/>
       {/*<HomePage/>*/}
       <Footer/>
       {/* <CourseDetails/> */}
