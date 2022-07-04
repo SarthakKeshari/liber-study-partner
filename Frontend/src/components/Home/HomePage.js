@@ -14,7 +14,7 @@ import { SearchIcon } from "@chakra-ui/icons";
 import { ArrowRightIcon, StarIcon } from "@chakra-ui/icons";
 import styles from "./HomePage.module.css";
 import Filter from "./Filter";
-import CourseCards from "./Courses/CourseCards";
+import CourseCards from "../Courses/CourseCards";
 
 
 export default function HomePage() {
