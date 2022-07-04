@@ -10,14 +10,17 @@ import TriviaCards from "./TriviaCards";
 
 export default function Trivia() {
     return (
-        <Box className={styles.background} marginTop={"100px"}>
-            <Box pt="4" >
-                <SimpleGrid minChildWidth="280px" spacing="18px">
+        <Box mx="5vw" minW="56" pt="24" px="4">
+            <Box className={styles.background} >
+                <Box pt="3" >
+                    <SimpleGrid minChildWidth="280px" spacing="18px">
 
-                    <TriviaCards />
-                    <TriviaCards />
-                </SimpleGrid>
-            </Box>
+                        <TriviaCards />
+                        <TriviaCards />
+
+                    </SimpleGrid>
+                </Box>
+            </Box >
         </Box >
 
     )
