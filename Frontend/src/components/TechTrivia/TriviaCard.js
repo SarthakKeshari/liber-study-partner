@@ -1,3 +1,4 @@
+import { TimeIcon } from "@chakra-ui/icons";
 import {
     Box,
     Image,
@@ -17,7 +18,7 @@ export default function CourseCard(props) {
         <Box
             bg="#821b9110"
             p="1"
-            borderRadius="2"
+            borderRadius="50"
             boxShadow="md"
             cursor="pointer"
             style={{
@@ -26,8 +27,9 @@ export default function CourseCard(props) {
             }}
         >
             <Image
-                height="200px"
+                height="120px"
                 width="100%"
+                borderTopRadius="50"
                 objectFit="cover"
                 src="/images/courses/os.png"
                 alt="Dan Abramov"
@@ -49,9 +51,8 @@ export default function CourseCard(props) {
                         fontSize="xs"
                         m="2"
                         pt="2"
-                        style={{ position: "absolute"}}
                     >
-                        {props.triviaDetail.sdate}
+                        <TimeIcon boxSize={4}/> {props.triviaDetail.sdate}
                     </Text>
                 </Box>
 

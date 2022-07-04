@@ -3,7 +3,7 @@ import { extendTheme, ChakraProvider } from '@chakra-ui/react'
 import Navbar from './components/Navbar';
 import './App.css'
 import HomePage from './components/Home/HomePage';
-import Footer from './components/Footer/Footer';
+import Footer from './components/Footer';
 // import CourseDetails from './components/Courses/CourseDetails'
 import Trivia from './components/TechTrivia/Trivia'
 const colors = {
@@ -21,8 +21,8 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <Navbar/>
-      {/* <Trivia/> */}
-      <HomePage/>
+      <Trivia/>
+      {/* <HomePage/> */}
       <Footer/>
       {/* <CourseDetails/> */}
     </ChakraProvider>

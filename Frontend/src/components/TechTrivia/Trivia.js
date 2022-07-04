@@ -13,7 +13,7 @@ export default function Trivia() {
         <Box mx="5vw" minW="56" pt="24" px="4">
             <Box className={styles.background} >
                 <Box pt="3" >
-                    <SimpleGrid minChildWidth="280px" spacing="18px">
+                    <SimpleGrid minChildWidth="360px" spacing="18px">
 
                         <TriviaCards />
                         <TriviaCards />
