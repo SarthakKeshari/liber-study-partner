@@ -27,7 +27,6 @@ export default function CourseCard(props) {
                 border: "1px solid #00000050",
                 backdropFilter: "blur(5px)",
             }}
-            onClick={() => {window.location.href=`http://localhost:3000/${props.title}`}}
         >
             <Image
                 height="160px"

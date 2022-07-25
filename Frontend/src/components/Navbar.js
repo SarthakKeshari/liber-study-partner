@@ -52,15 +52,14 @@ export default function Navbar() {
             </MenuButton>
             <MenuList>
               <MenuGroup title="Profile">
-                <MenuItem onClick={() => {window.location.href="http://localhost:3000/account"}}>My Account</MenuItem>
-                <MenuItem onClick={() => {window.location.href="http://localhost:3000/favs"}}>My Favourites </MenuItem>
-                <MenuItem onClick={() => {window.location.href="http://localhost:3000/trivia"}}>Play Trivia </MenuItem>
-                <MenuItem onClick={() => {window.location.href="http://localhost:3000/noteskeeper"}}>Notes Keeper </MenuItem>
+                <MenuItem>My Account</MenuItem>
+                <MenuItem>My Favourites </MenuItem>
+                <MenuItem>Notes Keeper </MenuItem>
               </MenuGroup>
               <MenuDivider />
               <MenuGroup title="Help">
-                <MenuItem onClick={() => {window.location.href="http://localhost:3000/docs"}}>Docs</MenuItem>
-                <MenuItem onClick={() => {window.location.href="http://localhost:3000/faq"}}>FAQ</MenuItem>
+                <MenuItem>Docs</MenuItem>
+                <MenuItem>FAQ</MenuItem>
               </MenuGroup>
               <MenuDivider />
               <MenuGroup title="">

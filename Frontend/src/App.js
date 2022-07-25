@@ -4,10 +4,8 @@ import Navbar from './components/Navbar';
 import './App.css'
 import HomePage from './components/Home/HomePage';
 import Footer from './components/Footer';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import CourseDetails from './components/Courses/CourseDetails'
 import TriviaQuizPanel from './components/TechTrivia/TriviaQuizPanel'
-import Trivia from './components/TechTrivia/Trivia';
 const colors = {
   brand: {
     900: '#1a365d',
@@ -23,15 +21,10 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <Navbar/>
-      <BrowserRouter>
-          <Routes>
-              <Route exact path="/" element={<HomePage />} />
-              <Route exact path="/trivia" element={<Trivia  />} />
-            {/* <TriviaQuizPanel/> */}
-            {/* <CourseDetails/> */}
-          </Routes>
-        </BrowserRouter>
+      <TriviaQuizPanel/>
+      {/* <HomePage/> */}
       <Footer/>
+      {/* <CourseDetails/> */}
     </ChakraProvider>
   )
 }
