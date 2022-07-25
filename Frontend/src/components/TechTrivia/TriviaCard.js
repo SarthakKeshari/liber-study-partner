@@ -9,9 +9,24 @@ import {
 
 import { useState } from "react";
 
-export default function CourseCard(props) {
-
+export default function TriviaCard(props) {
+    var timeleft ="";
+    var dest = new Date("aug 12, 2022 10:00:00").getTime();
+    var x = setInterval(function() {
+    var now = new Date().getTime();
    
+    var diff = dest - now;
+
+    var days = Math.floor(diff/(1000*60*60*24));
+    console.log(days);
+    var hours = Math.floor((diff%(1000*60*60*24))/(1000*60*60));
+    console.log(hours);
+    var mins = Math.floor((diff%(1000*60*60))/(1000*60));
+    console.log(mins);
+    var sec = Math.floor((diff%(1000*60))/(1000));
+    console.log(sec);
+    timeleft = days + "D : "+ hours + "H : " + mins + "M : " + sec + "S ";
+    },5000);
 
     return (
 
@@ -53,6 +68,20 @@ export default function CourseCard(props) {
                         pt="2"
                     >
                         <TimeIcon boxSize={4}/> {props.triviaDetail.sdate}
+                    </Text>
+                </Box>
+
+                <Box
+                    w="100%"
+                    size="xs"
+                    
+                >
+                    <Text
+                        fontSize="xs"
+                        m="2"
+                        pt="2"
+                    >
+                        <TimeIcon boxSize={4}/> {timeleft}
                     </Text>
                 </Box>
 

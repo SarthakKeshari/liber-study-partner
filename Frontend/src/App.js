@@ -2,10 +2,10 @@
 import { extendTheme, ChakraProvider } from '@chakra-ui/react'
 import Navbar from './components/Navbar';
 import './App.css'
-import HomePage from './components/Home/HomePage';
+import LeftPanel from './components/Dashboard/LeftPanel';
 import Footer from './components/Footer';
 // import CourseDetails from './components/Courses/CourseDetails'
-import TriviaQuizPanel from './components/TechTrivia/TriviaQuizPanel'
+//import Trivia from './components/TechTrivia/Trivia'
 const colors = {
   brand: {
     900: '#1a365d',
@@ -21,8 +21,7 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <Navbar/>
-      <TriviaQuizPanel/>
-      {/* <HomePage/> */}
+      <LeftPanel /> 
       <Footer/>
       {/* <CourseDetails/> */}
     </ChakraProvider>
