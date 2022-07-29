@@ -2,8 +2,9 @@
 import { extendTheme, ChakraProvider } from '@chakra-ui/react'
 import Navbar from './components/Navbar';
 import './App.css'
-import LeftPanel from './components/Dashboard/LeftPanel';
+import RightPanel from './components/Dashboard/RightPanel';
 import Footer from './components/Footer';
+import HomePage from './components/Home/HomePage';
 
 const colors = {
   brand: {
@@ -19,7 +20,7 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <Navbar/>
-      <LeftPanel />
+      <RightPanel />
       <Footer/>
     </ChakraProvider>
   )
