@@ -35,6 +35,5 @@ export default function LeftPanel() {
             </Container>
 
         </Box>
-
     );
 }
