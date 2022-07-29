@@ -8,7 +8,7 @@ import {
 
 export default function LeftPanel() {
     return (
-        <Box  w='20%' p={4} h={700} color='white' marginTop={30}>
+        <Box  w='20%' minW="56" pt="24" p={4} h={700} color='white' marginTop={30}>
 
             <Container maxW='1000px' color={'black'} marginTop={8}>
                 Profile
