@@ -2,10 +2,12 @@
 import { extendTheme, ChakraProvider } from '@chakra-ui/react'
 import Navbar from './components/Navbar';
 import './App.css'
-import RightPanel from './components/Dashboard/RightPanel';
-import Footer from './components/Footer';
 import HomePage from './components/Home/HomePage';
-
+import Footer from './components/Footer';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import CourseDetails from './components/Courses/CourseDetails'
+import TriviaQuizPanel from './components/TechTrivia/TriviaQuizPanel'
+import Trivia from './components/TechTrivia/Trivia';
 const colors = {
   brand: {
     900: '#1a365d',
@@ -16,11 +18,19 @@ const colors = {
 
 const theme = extendTheme({ colors })
 
+// 3. Pass the `theme` prop to the `ChakraProvider`
 function App() {
   return (
     <ChakraProvider theme={theme}>
       <Navbar/>
-      <RightPanel />
+      <BrowserRouter>
+          <Routes>
+              <Route exact path="/" element={<HomePage />} />
+              <Route exact path="/trivia" element={<Trivia  />} />
+            {/* <TriviaQuizPanel/> */}
+            {/* <CourseDetails/> */}
+          </Routes>
+        </BrowserRouter>
       <Footer/>
     </ChakraProvider>
   )
