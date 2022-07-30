@@ -8,6 +8,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import CourseDetails from './components/Courses/CourseDetails'
 import TriviaQuizPanel from './components/TechTrivia/TriviaQuizPanel'
 import Trivia from './components/TechTrivia/Trivia';
+import Dashboard from './components/Dashboard/Dashboard';
+
 const colors = {
   brand: {
     900: '#1a365d',
@@ -27,6 +29,7 @@ function App() {
           <Routes>
               <Route exact path="/" element={<HomePage />} />
               <Route exact path="/trivia" element={<Trivia  />} />
+              <Route exact path="/account" element={<Dashboard  />} />
             {/* <TriviaQuizPanel/> */}
             {/* <CourseDetails/> */}
           </Routes>
