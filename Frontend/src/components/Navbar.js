@@ -70,7 +70,6 @@ export default function Navbar() {
               </MenuGroup>
             </MenuList>
           </Menu>
-          
         ) : (
           <ButtonGroup gap="2">
             <Login />
