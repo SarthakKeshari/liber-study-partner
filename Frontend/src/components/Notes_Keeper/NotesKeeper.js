@@ -14,7 +14,7 @@ import {
 
 
 
-export default function Dashboard() {
+export default function NotesKeeper() {
     return (
         <Box bg='tomato' w='100%' p={4} height='40%' color='white'>
             You don't Have Anything to Store.

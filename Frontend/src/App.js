@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import TriviaQuizPanel from './components/TechTrivia/TriviaQuizPanel'
 import Trivia from './components/TechTrivia/Trivia';
 import Dashboard from './components/Dashboard/Dashboard';
+import NotesKeeper from './components/Notes_Keeper/NotesKeeper';
 
 const colors = {
   brand: {
@@ -30,6 +31,7 @@ function App() {
               <Route exact path="/" element={<HomePage />} />
               <Route exact path="/trivia" element={<Trivia  />} />
               <Route exact path="/account" element={<Dashboard  />} />
+              <Route exact path="/noteskeeper" element={<NotesKeeper  />} />
             {/* <TriviaQuizPanel/> */}
             {/* <CourseDetails/> */}
           </Routes>
