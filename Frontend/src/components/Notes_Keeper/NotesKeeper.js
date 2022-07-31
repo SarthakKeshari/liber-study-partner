@@ -5,44 +5,41 @@ import {
     PopoverContent,
     PopoverHeader,
     PopoverBody,
-    PopoverFooter,
+    Input,
     PopoverArrow,
     PopoverCloseButton,
-    PopoverAnchor,
     Button,
+    InputGroup,
+    InputLeftAddon,
 } from '@chakra-ui/react'
 
 
 
 export default function NotesKeeper() {
     return (
-        <Box bg='tomato' w='100%' p={4} height='40%' color='white'>
+        <Box pt="24" px="4" w='100%' p={4} height='100vh'  color='black' marginTop={6}  >
             You don't Have Anything to Store.
 
             <Popover>
                 <PopoverTrigger>
-                    <Button>ADD</Button>
+                    <Button  marginRight={"auto"} bg={'red'}>ADD</Button>
                 </PopoverTrigger>
                 <PopoverContent>
                     <PopoverArrow />
                     <PopoverCloseButton />
                     <PopoverHeader>NOTES KEEPER</PopoverHeader>
                     <PopoverBody>
-                        <Text mb='8px'>Title  {value}</Text>
-                        <Input
-                            value={value}
-                            onChange={handleChange}
-                            placeholder='Title'
-                            size='sm'
-                        />
-                        <Text mb='8px'>Content  {value}</Text>
-                        <Input
-                            value={value}
-                            onChange={handleChange}
-                            placeholder='Content'
-                            size='sm'
-                        />
-                        <Button colorScheme='blue' ref={initialFocusRef}>
+                        <InputGroup size='sm' marginTop={4}>
+                            <InputLeftAddon children='Title' />
+                            <Input type='text' placeholder='Title' />
+
+                        </InputGroup>
+                        <InputGroup size='sm' marginTop={4}>
+                            <InputLeftAddon children='Content' />
+                            <Input type='text' placeholder='Content' />
+
+                        </InputGroup>
+                        <Button colorScheme='blue' marginTop={4}>
                             ADD NOTES
                         </Button>
                     </PopoverBody>
