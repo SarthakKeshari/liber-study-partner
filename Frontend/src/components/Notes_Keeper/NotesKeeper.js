@@ -1,72 +1,52 @@
 import {
     Box,
-    Popover,
-    PopoverTrigger,
-    PopoverContent,
-    PopoverHeader,
-    PopoverBody,
-    Input,
-    PopoverArrow,
-    PopoverCloseButton,
+    IconButton,
+    Tooltip,
     Button,
-    InputGroup,
-    InputLeftAddon,
-    Image,
-    Heading,
-    Text,
+    Modal,
+    ModalBody,
+    ModalFooter,
+    useDisclosure,
+    ModalOverlay,
+    ModalHeader,
+    ModalCloseButton,
+    ModalContent,
+    Stack,
+    Input,
+    Textarea
 } from '@chakra-ui/react';
 import { useEffect, useState } from "react";
 import NotesKeeperCard from "./NotesKeeperCard";
 import NotesKeeperDetail from "./NotesKeeper.json"
-
-
+import { AddIcon } from '@chakra-ui/icons';
 
 export default function NotesKeeper() {
-    const [renderNotesKeeperCard, setRenderNotesKeeperCard] = useState();
+    const { isOpen, onOpen, onClose } = useDisclosure()
 
-    useEffect(() => {
-        setRenderNotesKeeperCard(
-            Object.keys(NotesKeeperDetail).map(e => {
-                // return (JSON.stringify(Courses[e]))
-                return <NotesKeeperCard NotesKeeperDetails={NotesKeeperDetail[e]} title={e} />
-            })
-        )
-    }, [])
     return (
-        <Box pt="24" px="4" w='100%' p={4} height='100vh' color='black' marginTop={6}  >
+        <Box pt="24" minHeight="90vh">
+            <Box border={"1px"} p="1" boxShadow='xl' onClick={onOpen} borderRadius="full" width={"fit-content"} position="fixed" bottom="28" right="10">
+                <Tooltip label="Add Note">
+                    <IconButton aria-label='Search database' borderRadius={"full"} icon={<AddIcon w={6} h={6}/>} />
+                </Tooltip>
+            </Box>
 
-            <>
-                {renderNotesKeeperCard}
-            </>
-
-            <Popover>
-                <PopoverTrigger>
-                    <Button marginRight={"auto"} bg={'red'}>ADD</Button>
-                </PopoverTrigger>
-                <PopoverContent>
-                    <PopoverArrow />
-                    <PopoverCloseButton />
-                    <PopoverHeader>NOTES KEEPER</PopoverHeader>
-                    <PopoverBody>
-                        <InputGroup size='sm' marginTop={4}>
-                            <InputLeftAddon children='Title' />
-                            <Input type='text' placeholder='Title' />
-
-                        </InputGroup>
-                        <InputGroup size='sm' marginTop={4}>
-                            <InputLeftAddon children='Content' />
-                            <Input type='text' placeholder='Content' />
-
-                        </InputGroup>
-                        <Button colorScheme='blue' marginTop={4}>
-                            ADD NOTES
-                        </Button>
-                    </PopoverBody>
-                </PopoverContent>
-            </Popover>
+            <Modal onClose={onClose} isOpen={isOpen} isCentered>
+                <ModalOverlay />
+                <ModalContent>
+                <ModalHeader>Add your note</ModalHeader>
+                <ModalCloseButton />
+                <ModalBody>
+                    <Stack spacing={3}>
+                        <Input variant='outline' placeholder='Add Title' />
+                        <Textarea placeholder='Add Content' />
+                    </Stack>
+                </ModalBody>
+                <ModalFooter>
+                    <Button onClick={onClose}>Add Note</Button>
+                </ModalFooter>
+                </ModalContent>
+            </Modal>
         </Box>
-
-
-
     );
 }
