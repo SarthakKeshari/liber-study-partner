@@ -42,6 +42,29 @@ export default function Navbar() {
       <Box>
         <Image borderRadius="full" boxSize="50px" src="/logo.jpg" alt="Logo" />
       </Box>
+      <Box style={{ display: "flex", cursor:"pointer"}}>
+        <Box color={'black'} marginTop={4} marginLeft={7} marginRight={7}>
+          Home
+        </Box>
+        <Box color={'black'} marginTop={4} marginLeft={7} marginRight={7}>
+          Courses
+        </Box>
+        <Box color={'black'} marginTop={4} marginLeft={7} marginRight={7}>
+          Community
+        </Box>
+        <Box color={'black'} marginTop={4} marginLeft={7} marginRight={7} onClick={() => {window.location.href="http://localhost:3000/trivia"}} >
+          Tech Trivia
+        </Box>
+        
+        <Box color={'black'} marginTop={4} marginLeft={7} marginRight={7}>
+          About us
+        </Box>
+        <Box color={'black'} marginTop={4} marginLeft={7} marginRight={7}>
+          Contact us
+        </Box>
+        
+      </Box>
+      
       <Box style={{ display: "flex", alignItems: "center" }}>
         {isLoggedIn ? (
           <Menu>

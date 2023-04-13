@@ -16,7 +16,6 @@ export default function Trivia() {
                     <SimpleGrid minChildWidth="360px" spacing="18px">
 
                         <TriviaCards />
-                        <TriviaCards />
 
                     </SimpleGrid>
                 </Box>

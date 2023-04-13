@@ -10,7 +10,7 @@
         "links" : ["https://youtube.com/playlist?list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi","https://youtu.be/hCrO_cR7kno","https://youtube.com/playlist?list=PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA","https://youtube.com/playlist?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ","https://youtube.com/playlist?list=PL-Jc9J83PIiFj7YSPl2ulcpwy-mwj1SSk"]
     },
 
-    "Operating System" : {
+    "Operating System" : {    
         "def" : "An operating system (OS) is basically a collection of software that manages computer hardware resources and provides common services for computer programs. ",
         "keywords" : ["sjf","paging","fcfs","roundrobin"],
         "domain" : "CS/IT",
@@ -60,7 +60,7 @@
         "domain" : "ECE",
         "rating" : 2.6,
         "views" : 2200,
-        "tag" : "Most Valuable",
+        "t*ag" : "Most Valuable",
         "imgurl" : "/images/courses/AD.png",
         "link" : ["https://youtube.com/playlist?list=PL3pGy4HtqwD0rl7gQoESHR-chSq4OPN5p","https://youtube.com/playlist?list=PLBDB2c4Mp7hDu6dGJF4T5m0-Myuh06xix","https://youtube.com/playlist?list=PLMSBalys69yzp1vrmnYAmpRFiptbuGuaj","https://youtube.com/playlist?list=PLbMVogVj5nJRlMz5diOg9wBizaU6-egJc","https://youtube.com/playlist?list=PLtswnpeGB_xwtVFCQZxYIEq81xaJJbjbO"]
     },

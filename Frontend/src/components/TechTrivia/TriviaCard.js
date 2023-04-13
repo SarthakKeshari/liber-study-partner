@@ -46,7 +46,7 @@ export default function TriviaCard(props) {
                 width="100%"
                 borderTopRadius="50"
                 objectFit="cover"
-                src="/images/courses/os.png"
+                src= {props.triviaDetail.imgurl}
                 alt="Dan Abramov"
             />
             

@@ -33,8 +33,8 @@ export default function CourseCard(props) {
                 height="160px"
                 width="100%"
                 objectFit="cover"
-                src="/images/courses/dsa.png"
-                alt="Dan Abramov"
+                src={props.courseDetail.imgurl}
+                alt="Course Img"
             />
             <Badge
                 variant="subtle"
